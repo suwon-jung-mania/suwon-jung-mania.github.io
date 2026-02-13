@@ -1,50 +1,133 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>정수원 포트폴리오</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            max-width: 600px;
-            margin: auto;
-        }
-        h1 {
-            color: #333;
-        }
-        .info {
-            margin-top: 20px;
-            font-size: 18px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>정수원 포트폴리오</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+}
+
+/* 상단 헤더 */
+.header {
+    background: #24314f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* 메뉴 */
+.nav {
+    background: #e5e7eb;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 컨텐츠 영역 */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* 카드 스타일 */
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+/* 프로젝트 목록 */
+.project {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+</style>
 </head>
+
 <body>
 
-<div class="container">
-    <h1>포트폴리오</h1>
+<!-- 헤더 -->
+<div class="header">
+    <h1>정수원 (Suwon Jung)</h1>
+    <p>회사원</p>
+</div>
 
-    <div class="info">
-        <p><strong>이름:</strong> 정수원 (Suwon Jung)</p>
-        <p><strong>직업:</strong> 회사원</p>
+<!-- 메뉴 -->
+<div class="nav">
+    <a href="#about">소개</a>
+    <a href="#project">프로젝트</a>
+    <a href="#contact">연락처</a>
+    <a href="#career">이력</a>
+</div>
+
+<div class="container">
+
+    <!-- 소개 -->
+    <div class="card" id="about">
+        <h2>👋 소개</h2>
+        <p>
+            안녕하세요. 정수원입니다.<br><br>
+            현재 회사원으로 근무하며 다양한 업무 경험과 기술 역량을 쌓고 있습니다.
+            문제 해결과 업무 효율 개선에 관심이 있으며 지속적인 성장과 학습을 목표로 하고 있습니다.
+        </p>
     </div>
 
-    <hr>
+    <!-- 프로젝트 -->
+    <div class="card" id="project">
+        <h2>🚀 주요 프로젝트</h2>
 
-    <h2>소개</h2>
-    <p>
-        안녕하세요. 정수원입니다. 현재 회사원으로 근무하며 다양한 프로젝트 경험을 쌓고 있습니다.
-    </p>
+        <div class="project">
+            🔴 프로젝트 1 — 업무 자동화 시스템 구축
+        </div>
+
+        <div class="project">
+            🔴 프로젝트 2 — 공정 개선 및 설비 관리 프로젝트
+        </div>
+    </div>
+
+    <!-- 연락처 -->
+    <div class="card" id="contact">
+        <h2>📧 연락처</h2>
+        <p>Email: example@email.com</p>
+    </div>
+
+    <!-- 이력 -->
+    <div class="card" id="career">
+        <h2>📄 이력</h2>
+        <p>현재 회사원 재직중</p>
+    </div>
 
 </div>
 
 </body>
-</html>
 </html>
